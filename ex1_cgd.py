@@ -10,20 +10,3 @@ def gcd(a,b):
     return gcd(b,r)
 
 print(gcd(a,b))
-
-
-
-
-'''
-First time writing the code step by step (incomplete):
-(incomplete because I quickly realized b and r could be the arguments of a recursive function like in the solution above)
-
-def gcd(a,b,r=None):
-    r = a%b
-
-    while True:
-        r = b % r
-        tmp = b
-        b = r
-        r = tmp
-'''
